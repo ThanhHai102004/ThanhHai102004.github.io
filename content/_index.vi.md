@@ -5,36 +5,33 @@ weight: 1
 chapter: false
 ---
 
-# Báo cáo thực tập
-### Thông tin sinh viên:
-&emsp; **Họ và tên:** Nguyễn Văn A
+# Báo cáo thực tập AWS
 
-&emsp; **Số điện thoại:** 0989888999
+{{% notice info %}}
+Báo cáo này tổng hợp trải nghiệm thực tập tại AWS và những hoạt động chính em đã tham gia trong chương trình.
+{{% /notice %}}
 
-&emsp; **Email:** Anguyenvan@gmail.com
+## Thông tin sinh viên
+- **Họ và tên:** Nguyễn Thanh Hải
+- **Số điện thoại:** 0356357727
+- **Email:** nguyenthanhhat00@gmail.com
+- **Trường:** Đại học Công nghệ Thành phố Hồ Chí Minh - Hutech
+- **Ngành:** Công nghệ phần mềm
+- **Lớp:** 22DTHE3
+- **Công ty thực tập:** Amazon Web Services Vietnam Co., Ltd.
+- **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
+- **Thời gian thực tập:** 17/04/2026 đến 30/07/2026
 
-&emsp; **Trường:** Đại học Sư phạm Kỹ thuật TP.HCM
+![Ảnh đại diện của bạn](/images/avatar1.jpg)
 
-&emsp; **Ngành:** Công nghệ thông tin
+## Về báo cáo này
+Báo cáo ghi lại hành trình học tập, nghiên cứu và phát triển kỹ năng trong thời gian thực tập tại AWS, bao gồm worklog, đề xuất, bài blog, sự kiện, workshop, tự đánh giá và phản hồi.
 
-&emsp; **Lớp:** AWS082025
-
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Viet Nam
-
-&emsp; **Vị trí thực tập:** Workforce Bootcamp - First Cloud AI Journey
-
-&emsp; **Thời gian thực tập:** Từ ngày 12/08/2025 đến ngày 12/11/2025
-
-![Ảnh đại diện của bạn](/images/avatar.png)
-
-
-
-### Nội dung báo cáo
-
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [Các bài blogs đã đăng](3-BlogsPosted/)
-4.  [Các events đã tham gia](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Tự đánh giá](6-Self-evaluation/)
-7.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)
+## Nội dung báo cáo
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Các bài blog đã đăng](3-BlogsPosted/)
+4. [Các sự kiện đã tham gia](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Tự đánh giá](6-Self-evaluation/)
+7. [Chia sẻ và phản hồi](7-Feedback/)

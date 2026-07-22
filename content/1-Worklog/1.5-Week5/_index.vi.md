@@ -5,55 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 5 (18/05/2026 – 24/05/2026)
+- Tìm hiểu nền tảng về Amazon DynamoDB.
+- Thực hành tạo bảng dữ liệu và thao tác CRUD.
+- Hiểu cách AWS Lambda có thể tích hợp với DynamoDB.
+- Thực hành sử dụng AWS CLI và theo dõi chi phí trên AWS Billing Dashboard.
 
-### Mục tiêu tuần 5:
+### Các hoạt động đã thực hiện
+Trong tuần thứ năm, em tập trung nghiên cứu về Amazon DynamoDB, một dịch vụ cơ sở dữ liệu NoSQL được quản lý trên AWS. Em tìm hiểu cấu trúc cơ bản của bảng, mục dữ liệu và khóa chính, cũng như cách dữ liệu được lưu trữ và truy xuất hiệu quả trong môi trường NoSQL. Em cũng thực hành tạo bảng và thực hiện các thao tác CRUD cơ bản như tạo, đọc, cập nhật và xóa dữ liệu.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Bên cạnh đó, em tìm hiểu cách AWS Lambda có thể tích hợp với DynamoDB để xử lý dữ liệu theo các sự kiện. Em cũng sử dụng AWS CLI để thao tác với các dịch vụ AWS từ dòng lệnh và theo dõi AWS Billing Dashboard nhằm hiểu rõ hơn về chi phí phát sinh khi vận hành hệ thống trên cloud.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
+- Hiểu được khái niệm cơ bản về Amazon DynamoDB.
+- Thực hành được tạo bảng và thao tác CRUD.
+- Nắm được cách tích hợp AWS Lambda với DynamoDB.
+- Củng cố kỹ năng sử dụng AWS CLI và nhận thức về quản lý chi phí trên AWS.
 
-
-### Kết quả đạt được tuần 5:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+### Nhận xét
+Tuần 5 giúp em hiểu rằng vận hành hệ thống trên AWS không chỉ dừng ở việc sử dụng các dịch vụ lưu trữ và tính toán, mà còn bao gồm cơ sở dữ liệu và quản lý chi phí hiệu quả.
 

@@ -5,55 +5,28 @@ weight: 2
 chapter: false
 pre: " <b> 1.11. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 11 (29/06/2026 – 05/07/2026)
+- Tiếp tục phát triển dự án Campus IT Support Ticket Portal.
+- Tích hợp Amazon API Gateway với AWS Lambda.
+- Thiết kế và kết nối Amazon DynamoDB lưu trữ dữ liệu ticket.
+- Kiểm thử luồng xử lý giữa Frontend và Backend.
+- Theo dõi log hệ thống bằng Amazon CloudWatch.
+- Sửa lỗi và hoàn thiện các chức năng đã triển khai.
 
-### Mục tiêu tuần 11:
+### Các hoạt động đã thực hiện
+Trong tuần thứ mười một, em tập trung đẩy mạnh việc phát triển kiến trúc backend serverless cho dự án Campus IT Support Ticket Portal. Cụ thể, em đã tiến hành tích hợp Amazon API Gateway với AWS Lambda để xử lý các yêu cầu từ phía người dùng, đồng thời thiết kế và kết nối Amazon DynamoDB nhằm lưu trữ dữ liệu các ticket hỗ trợ một cách hiệu quả.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Em cũng thực hiện kiểm thử toàn diện luồng xử lý dữ liệu giữa Frontend và Backend để đảm bảo hệ thống vận hành trơn tru. Trong quá trình này, em sử dụng Amazon CloudWatch để theo dõi log hệ thống, qua đó nhanh chóng phát hiện, sửa lỗi và hoàn thiện các chức năng đã được triển khai.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
+- Xây dựng thành công mô hình Serverless bằng cách tích hợp nhịp nhàng giữa Amazon API Gateway và AWS Lambda.
+- Hoàn tất thiết kế cơ sở dữ liệu và kết nối thành công Amazon DynamoDB phục vụ việc lưu trữ ticket.
+- Đảm bảo luồng giao tiếp và xử lý dữ liệu giữa Frontend và Backend diễn ra ổn định thông qua quá trình kiểm thử.
+- Nâng cao khả năng giám sát, gỡ lỗi hệ thống nhờ sử dụng hiệu quả Amazon CloudWatch.
+- Khắc phục các lỗi phát sinh, giúp các chức năng của dự án hoàn thiện và ổn định hơn.
 
-
-### Kết quả đạt được tuần 11:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Nhận xét
+Tuần 11 mang lại trải nghiệm thực tế quý giá trong việc xây dựng một hệ thống Serverless hoàn chỉnh trên AWS cho dự án. Việc kết nối liền mạch giữa API Gateway, Lambda và DynamoDB giúp em củng cố sâu sắc tư duy thiết kế kiến trúc ứng dụng cloud-native, đồng thời nâng cao kỹ năng xử lý lỗi và vận hành hệ thống.
 
 

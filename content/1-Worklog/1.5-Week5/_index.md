@@ -5,53 +5,23 @@ weight: 1
 chapter: false
 pre: " <b> 1.5. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 5 Objectives (18/05/2026 – 24/05/2026)
+- Learn the fundamentals of Amazon DynamoDB.
+- Practice creating tables and performing CRUD operations.
+- Understand how AWS Lambda can work with DynamoDB.
+- Practice using AWS CLI and monitoring AWS costs.
 
-### Week 5 Objectives:
+### Activities Completed
+In the fifth week, I focused on Amazon DynamoDB, which is a managed NoSQL database service on AWS. I studied the basic structure of tables, items, and primary keys, and I learned how data is stored and retrieved efficiently in a NoSQL environment. I also practiced creating a table and performing basic CRUD operations such as create, read, update, and delete data.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+In addition, I explored how AWS Lambda can be integrated with DynamoDB so that applications can process data dynamically. I also used AWS CLI to manage AWS services from the command line and checked the AWS Billing Dashboard to monitor usage and understand how costs are generated in the cloud environment.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Results Achieved
+- Gained a basic understanding of Amazon DynamoDB.
+- Practiced creating tables and performing CRUD operations.
+- Learned the connection between AWS Lambda and DynamoDB.
+- Improved knowledge of AWS CLI usage and cost monitoring.
 
-
-### Week 5 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Reflection
+Week 5 helped me understand that cloud services are not only about storage and computing, but also about databases and cost awareness. Working with DynamoDB and monitoring billing gave me a more complete view of how cloud systems are operated in practice.

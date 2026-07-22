@@ -5,55 +5,24 @@ weight: 1
 chapter: false
 pre: " <b> 1.3. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 3 (04/05/2026 – 10/05/2026)
+- Tìm hiểu nền tảng về Amazon S3.
+- Nắm được khái niệm về bucket, object, storage class và kiểm soát truy cập.
+- Thực hành các thao tác cơ bản trên S3 trong AWS.
 
-### Mục tiêu tuần 3:
+### Các hoạt động đã thực hiện
+Trong tuần thứ ba, em tập trung tìm hiểu về Amazon Simple Storage Service (S3), một trong những dịch vụ lưu trữ cốt lõi của AWS. Em nghiên cứu cách S3 lưu trữ dữ liệu dưới dạng object trong bucket và cách các storage class khác nhau được sử dụng tùy theo tần suất truy cập và yêu cầu chi phí. Em cũng tìm hiểu về các tính năng cơ bản của S3 như phân quyền, bucket policy và kiểm soát truy cập ở mức object.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Trong quá trình học, em thực hành tạo bucket, tải lên tệp tin và quan sát cách S3 tổ chức dữ liệu. Điều này giúp em hiểu rõ hơn sự khác biệt giữa object storage và lưu trữ tệp truyền thống, cũng như cách AWS quản lý dữ liệu ở quy mô lớn một cách hiệu quả.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
+- Hiểu rõ hơn về các khái niệm cơ bản của Amazon S3.
+- Nắm được sự khác biệt giữa bucket và object.
+- Hiểu được ý nghĩa của storage class và kiểm soát truy cập.
+- Có nhận thức thực tế hơn về các thao tác cơ bản trên S3.
 
-
-### Kết quả đạt được tuần 3:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Nhận xét
+Tuần 3 giúp em hiểu sâu hơn về dịch vụ lưu trữ trên cloud. S3 là một dịch vụ quan trọng vì nó cung cấp cách lưu trữ và quản lý dữ liệu đơn giản, linh hoạt và có khả năng mở rộng cao.
 
 

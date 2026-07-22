@@ -5,54 +5,29 @@ weight: 2
 chapter: false
 pre: " <b> 1.12 </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
-### Mục tiêu tuần 12:
+### Mục tiêu tuần 12 (06/07/2026 – 12/07/2026)
+- Tích hợp Amazon Cognito để xác thực và phân quyền người dùng.
+- Hoàn thiện chức năng lưu trữ tệp bằng Amazon S3.
+- Cấu hình IAM Role và IAM Policy cho các dịch vụ AWS.
+- Kiểm thử toàn bộ quy trình gửi và xử lý ticket.
+- Tối ưu hiệu năng và xử lý các lỗi còn tồn tại.
+- Cập nhật tài liệu kỹ thuật và báo cáo tiến độ dự án.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+### Các hoạt động đã thực hiện
+Trong tuần thứ mười hai, em tập trung hoàn thiện các tính năng bảo mật, lưu trữ và bảo vệ toàn diện cho hệ thống của dự án Campus IT Support Ticket Portal. Cụ thể, em đã tiến hành tích hợp Amazon Cognito để đảm bảo việc xác thực và phân quyền người dùng an toàn. Đồng thời, em hoàn thiện chức năng lưu trữ tệp đính kèm bằng Amazon S3 và thiết lập cấu hình IAM Role, IAM Policy chặt chẽ theo nguyên tắc cấp quyền tối thiểu cho các dịch vụ AWS.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+Em cũng thực hiện kiểm thử toàn bộ quy trình từ khâu gửi đến xử lý ticket của hệ thống, tiến hành tối ưu hóa hiệu năng và khắc phục triệt để các lỗi còn tồn tại. Cuối tuần, em cập nhật đầy đủ tài liệu kỹ thuật và hoàn tất báo cáo tiến độ dự án.
 
+### Kết quả đạt được
+- Tích hợp thành công Amazon Cognito, giúp hệ thống quản lý và xác thực người dùng chuẩn xác, bảo mật.
+- Hoàn thiện module lưu trữ tệp trên Amazon S3 phục vụ đính kèm file trong hệ thống ticket.
+- Thiết lập thành công các chính sách và vai trò bảo mật thông qua IAM Role và IAM Policy.
+- Kiểm thử thành công toàn trình quy trình gửi và xử lý ticket, đảm bảo sự mượt mà khi vận hành.
+- Nâng cao hiệu năng tổng thể của ứng dụng và giải quyết dứt điểm các lỗi phát sinh.
+- Hoàn thiện toàn bộ tài liệu kỹ thuật và báo cáo tiến độ dự án theo đúng kế hoạch.
 
-### Kết quả đạt được tuần 12:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Nhận xét
+Tuần 12 đánh dấu mốc hoàn thiện quan trọng của dự án, từ khâu xác thực bảo mật (Cognito, IAM), lưu trữ (S3) cho đến việc kiểm thử và tối ưu hóa toàn bộ luồng nghiệp vụ. Quá trình này giúp em đúc kết được nhiều kinh nghiệm thực tế trong việc xây dựng một hệ thống Cloud hoàn chỉnh, an toàn và sẵn sàng cho giai đoạn bàn giao.
 
 

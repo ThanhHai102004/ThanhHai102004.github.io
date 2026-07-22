@@ -6,17 +6,15 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
+This section contains three blog posts about my AWS learning process through practical tasks. The posts focus on what I learned while using AWS services step by step, from account setup and cost control to core services, serverless APIs, monitoring, and security.
 
-This section will list and introduce the blogs you have posted to [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). For example:
+Published blog posts link: [AWS Study Group VN](https://www.facebook.com/groups/awsstudygroupfcj)
 
-###  [Blog 1 - SESSION POLICIES IN AMAZON EKS POD IDENTITY](3.1-Blog1/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 1 - Learning AWS from Account Setup, IAM, and Cost Control](3.1-Blog1/)
+This blog shares how I started learning AWS by preparing an account, exploring the AWS Console, configuring billing awareness, and understanding IAM permissions.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 2 - Practicing Core AWS Services: EC2, S3, VPC, and Databases](3.2-Blog2/)
+This blog focuses on hands-on tasks with EC2, S3, VPC, security groups, and database services, and explains how these services helped me understand cloud infrastructure.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces the newly added session policies feature in Amazon EKS Pod Identity, which allows you to narrow IAM permissions flexibly and precisely for each pod without needing to create multiple separate IAM roles. This is an important step forward that helps apply the principle of least privilege more effectively in large-scale Kubernetes environments.
+###  [Blog 3 - Learning Serverless, Authentication, Monitoring, and Security on AWS](3.3-Blog3/)
+This blog discusses the learning tasks related to Lambda, API Gateway, Cognito, DynamoDB, S3 attachments, CloudWatch, IAM, and cleanup.

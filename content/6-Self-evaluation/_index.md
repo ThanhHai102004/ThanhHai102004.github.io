@@ -6,34 +6,44 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** into your report, including this warning.
-{{% /notice %}}
+# SELF-ASSESSMENT
 
-During my internship at **[Company/Organization Name]** from **[start date]** to **[end date]**, I had the opportunity to learn, practice, and apply the knowledge acquired in school to a real-world working environment.  
-I participated in **[briefly describe the main project or task]**, through which I improved my skills in **[list skills: programming, analysis, reporting, communication, etc.]**.  
+During my internship at **Amazon Web Services Vietnam Co., Ltd.** as an **FCJ Cloud Computing Intern**, I had the opportunity to study AWS services through hands-on practice and apply them to the **Campus IT Support Ticket Portal** project. 
 
-In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
+The internship was carried out across 12 weeks. In the early stage, I focused on AWS fundamentals, technical documentation, and weekly worklog writing. In the following weeks, I practiced services and topics such as VPC, EC2, RDS/Aurora, IAM, Billing Dashboard, serverless, containers, CI/CD, and AWS operation concepts.
 
-To objectively reflect on my internship period, I would like to evaluate myself based on the following criteria:
+In the final stage, I focused on completing the project, proposal, workshop documentation, blog posts, self-assessment, and sharing/feedback sections. The project helped me understand how to build a serverless system using **AWS Amplify Hosting, Amazon Cognito, Amazon API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon SES, Amazon CloudWatch, and AWS IAM**.
 
-| No. | Criteria                            | Description                                                                                      | Good | Fair | Average |
-| --- | ----------------------------------- | ------------------------------------------------------------------------------------------------ | ---- | ---- | ------- |
-| 1   | **Professional knowledge & skills** | Understanding of the field, applying knowledge in practice, proficiency with tools, work quality | ✅    | ☐    | ☐       |
-| 2   | **Ability to learn**                | Ability to absorb new knowledge and learn quickly                                                | ☐    | ✅    | ☐       |
-| 3   | **Proactiveness**                   | Taking initiative, seeking out tasks without waiting for instructions                            | ✅    | ☐    | ☐       |
-| 4   | **Sense of responsibility**         | Completing tasks on time and ensuring quality                                                    | ✅    | ☐    | ☐       |
-| 5   | **Discipline**                      | Adhering to schedules, rules, and work processes                                                 | ☐    | ☐    | ✅       |
-| 6   | **Progressive mindset**             | Willingness to receive feedback and improve oneself                                              | ☐    | ✅    | ☐       |
-| 7   | **Communication**                   | Presenting ideas and reporting work clearly                                                      | ☐    | ✅    | ☐       |
-| 8   | **Teamwork**                        | Working effectively with colleagues and participating in teams                                   | ✅    | ☐    | ☐       |
-| 9   | **Professional conduct**            | Respecting colleagues, partners, and the work environment                                        | ✅    | ☐    | ☐       |
-| 10  | **Problem-solving skills**          | Identifying problems, proposing solutions, and showing creativity                                | ☐    | ✅    | ☐       |
-| 11  | **Contribution to project/team**    | Work effectiveness, innovative ideas, recognition from the team                                  | ✅    | ☐    | ☐       |
-| 12  | **Overall**                         | General evaluation of the entire internship period                                               | ✅    | ☐    | ☐       |
+## Assessment Results
 
-### Needs Improvement
+| No. | Criteria | Rating | Comment |
+| :--- | :--- | :--- | :--- |
+| 1 | AWS fundamentals | Good | I understood the roles of core services such as IAM, EC2, VPC, S3, Lambda, DynamoDB, API Gateway, and CloudWatch. |
+| 2 | Applying knowledge to the project | Good | I was able to combine multiple AWS services to build a ticket portal with frontend hosting, authentication, APIs, backend logic, database, and file storage. |
+| 3 | Learning ability | Good | I could read technical materials, follow workshops, and adjust the documentation when the project changed. |
+| 4 | Problem-solving | Fair | I learned to investigate issues by checking frontend behavior, Cognito authentication, API Gateway, Lambda, DynamoDB, S3, and CloudWatch Logs. |
+| 5 | Documentation skill | Good | I completed the worklog, proposal, blog posts, workshop, and final summary according to the internship report structure. |
+| 6 | Progress management | Fair | I divided work by week, updated progress, and reviewed documents during the final stage. |
+| 7 | Testing and review | Fair | I checked user/admin flows, ticket APIs, file upload, notifications, and system logs. |
+| 8 | Security and cost awareness | Fair | I paid attention to IAM permissions, Cognito Groups, JWT Authorizer, private S3 bucket usage, and Billing Dashboard monitoring. |
+| 9 | Presentation skill | Fair | I could explain the system architecture, workflow, and implementation result through workshop documentation. |
+| 10 | Overall | Good | I completed the main learning goals, practical project, and report documentation across the 12-week plan. |
 
-* Strengthen discipline and strictly comply with the rules and regulations of the company or any organization  
-* Improve problem-solving thinking  
-* Enhance communication skills in both daily interactions and professional contexts, including handling situations effectively
+## Strengths
+
+- I maintained a self-learning attitude and actively studied AWS documentation.
+- I recorded the learning and implementation process through weekly worklogs.
+- I connected theoretical AWS knowledge with a realistic project.
+- I gained a clearer understanding of serverless architecture and how AWS services work together.
+- I became more careful when checking links, images, architecture diagrams, and report content before finalizing the documentation.
+
+## Areas for Improvement
+
+- I need more practice in architecture design before implementation to reduce repeated changes later.
+- I need to improve backend debugging and CloudWatch log analysis.
+- I need to study API security, IAM least privilege, and production environment management more deeply.
+- I need to practice explaining architecture and technical workflows more concisely.
+
+## Conclusion
+
+After the internship, I believe I achieved the main goal of understanding and important AWS services through a realistic project. Although I still need to improve in architecture design and system operation, this process helped me become more confident when approaching cloud, serverless, and AWS application deployment tasks.

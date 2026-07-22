@@ -5,53 +5,25 @@ weight: 1
 chapter: false
 pre: " <b> 1.6. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 6 Objectives (25/05/2026 – 31/05/2026)
+- Learn the monitoring mechanism of AWS resources using Amazon CloudWatch.
+- Observe logs and metrics of the system.
+- Practice configuring CloudWatch alarms.
+- Analyze logs and handle errors that arise during operations.
+- Update internship documentation.
 
-### Week 6 Objectives:
+### Activities Completed
+In the sixth week, I studied Amazon CloudWatch, which is the main monitoring and observability service in AWS. I learned how CloudWatch collects metrics, stores logs, and provides visibility into the health and performance of AWS resources. I also practiced observing system metrics and logs to understand the current state of services and detect abnormal behavior.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+During the learning process, I configured basic CloudWatch alarms so that abnormal conditions could be identified quickly. I also reviewed logs and attempted to analyze errors that occurred during service operation, which helped me understand how monitoring data can be used to troubleshoot issues. In addition to technical practice, I updated my internship documentation to keep a clear record of the work completed during the week.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Results Achieved
+- Gained an understanding of AWS monitoring and observability concepts.
+- Learned how to monitor logs and metrics using CloudWatch.
+- Practiced configuring CloudWatch alarms.
+- Improved ability to analyze logs and identify operational issues.
+- Updated internship documentation in a more structured way.
 
-
-### Week 6 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Reflection
+Week 6 gave me a better understanding of the importance of monitoring in cloud systems. Monitoring is not only about checking system status, but also about detecting problems early and supporting stable and reliable operations.

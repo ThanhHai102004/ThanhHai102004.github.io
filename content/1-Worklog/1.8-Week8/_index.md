@@ -5,53 +5,27 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 8 Objectives (08/06/2026 – 14/06/2026)
+- Monitor the system using Amazon CloudWatch.
+- Explore AWS Systems Manager.
+- Research Amazon Cognito for user authentication.
+- Understand the architecture of the Campus IT Support Ticket Portal project.
+- Participate in team discussions regarding system deployment strategies.
+- Attend events: Learn about the operation of a URL shortener service, workplace cultural integration, and gain deeper insights into DevOps.
+- Prepare AWS resources for the project.
 
-### Week 8 Objectives:
+### Activities Performed
+During the eighth week, em focused on exploring and applying management, monitoring, and security services on AWS. Specifically, em learned how to monitor system activities using Amazon CloudWatch and researched AWS Systems Manager for efficient resource and configuration management. Additionally, em invested time in studying Amazon Cognito to implement secure user authentication and management.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Em also studied the architecture of the Campus IT Support Ticket Portal project in depth and actively participated in discussions with the team to finalize the optimal system deployment plan. Furthermore, em prepared the necessary AWS resources for the project. Throughout the week, em attended valuable events: listening to practical sharing about the development and operation of a URL shortener service, learning valuable lessons on workplace cultural integration, and expanding my in-depth knowledge of DevOps.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Results Achieved
+- Mastered the use of Amazon CloudWatch for system monitoring.
+- Gained a solid understanding of the operating principles of AWS Systems Manager and Amazon Cognito.
+- Grasped the architecture of the Campus IT Support Ticket Portal project and aligned on deployment plans with the team.
+- Successfully prepared the required AWS resources for the project.
+- Gained practical insights and valuable takeaways from events covering DevOps, workplace culture, and system operations.
 
-
-### Week 8 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Remarks
+Week 8 provided me with a comprehensive perspective on cloud operations, security, and monitoring. Early exposure to Cognito, CloudWatch, Systems Manager, along with real-world sharing sessions, helped solidify my DevOps knowledge and prepared me well for the upcoming project deployment phases.

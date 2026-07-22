@@ -5,40 +5,33 @@ weight: 1
 chapter: false
 ---
 
-    
-# Internship Report
+# AWS Internship Report
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
+{{% notice info %}}
+This report summarizes my internship experience at AWS and the key activities I completed during the program.
 {{% /notice %}}
 
-### Student Information:
-&emsp; **Full Name:** Nguyen Van A
+## Student Information
+- **Full Name:** Nguyen Thanh Hai
+- **Phone Number:** 0356357727
+- **Email:** nguyenthanhhat00@gmail.com
+- **University:** Hutech University
+- **Major:** Software Engineering
+- **Class:** 22DTHE3
+- **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+- **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
+- **Internship Duration:** 17/04/2026 đến 30/07/2026
 
-&emsp; **Phone Number:** 0989888999 
+![Your profile picture](/images/avatar1.jpg)
 
-&emsp; **Email:** Anguyenvan@gmail.com
+## About This Report
+This report documents my learning journey during the AWS internship, including my worklog, proposal, blogs, events, workshop participation, self-evaluation, and feedback.
 
-&emsp; **University:** Ho Chi Minh City University of Technology and Education
-
-&emsp; **Major:** Information Technology
-
-&emsp; **Class:** AWS082025
-
-&emsp; **Internship Company:** Amazon Web Services Viet Nam Company Limited
-
-&emsp; **Internship Position:** Workforce Bootcamp - First Cloud AI Journey
-
-&emsp; **Internship Duration:** From 12/08/2025 to 12/11/2025
-
-![Your profile picture](/images/avatar.png)
-
-### Report Content
-
-1.  [Worklog](1-Worklog/)
-2.  [Proposal](2-Proposal/)
-3.  [BlogsPosted](3-BlogsPosted/)
-4.  [Events Participated](4-EventParticipated/)
-5.  [Workshop](5-Workshop/)
-6.  [Self-evaluation](6-Self-evaluation/)
-7.  [Sharing and Feedback](7-Feedback/)
+## Report Content
+1. [Worklog](1-Worklog/)
+2. [Proposal](2-Proposal/)
+3. [Blogs Posted](3-BlogsPosted/)
+4. [Events Participated](4-EventParticipated/)
+5. [Workshop](5-Workshop/)
+6. [Self-evaluation](6-Self-evaluation/)
+7. [Sharing and Feedback](7-Feedback/)

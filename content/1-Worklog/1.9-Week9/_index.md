@@ -5,53 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 9 Objectives (15/06/2026 – 21/06/2026)
+- Manage permissions using IAM Permission Boundaries.
+- Monitor network traffic using VPC Flow Logs.
+- Explore AWS Backup for data backup solutions.
+- Participate in the AWS First Cloud Security Journey program.
+- Continue developing components for the team project.
+- Discuss and finalize the integration strategy for AWS services.
 
-### Week 9 Objectives:
+### Activities Performed
+During the ninth week, em focused deeply on security, network monitoring, and data management solutions on AWS. Specifically, em learned how to manage fine-grained access control using IAM Permission Boundaries and set up network traffic monitoring with VPC Flow Logs. Additionally, em researched AWS Backup to establish secure data backup and protection strategies for the system.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Em also continued participating in the AWS First Cloud Security Journey program to enhance cloud security knowledge. Within the team project framework, em kept developing core components and actively collaborated with team members to discuss and finalize the integration strategy for various AWS services into the shared system.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Results Achieved
+- Mastered the use of IAM Permission Boundaries to control and restrict permissions effectively.
+- Gained a clear understanding of configuring and analyzing network traffic using VPC Flow Logs.
+- Applied knowledge of AWS Backup toward data backup strategies.
+- Completed learning milestones from the AWS First Cloud Security Journey program.
+- Advanced the development of team project components and aligned on the integration plan for AWS services.
 
-
-### Week 9 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Remarks
+Week 9 provided me with advanced, in-depth knowledge of cloud security and infrastructure administration. Combining security theories (IAM, VPC Flow Logs, Backup) with hands-on team project deployment helped solidify my mindset in designing secure and robust system architectures.

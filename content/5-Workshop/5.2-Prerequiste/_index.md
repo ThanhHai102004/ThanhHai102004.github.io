@@ -1,242 +1,377 @@
 ---
-title : "Prerequiste"
+title : "Architecture Overview"
 date : 2024-01-01 
 weight : 2 
 chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
-Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
-```
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "cloudformation:*",
-                "cloudwatch:*",
-                "ec2:AcceptTransitGatewayPeeringAttachment",
-                "ec2:AcceptTransitGatewayVpcAttachment",
-                "ec2:AllocateAddress",
-                "ec2:AssociateAddress",
-                "ec2:AssociateIamInstanceProfile",
-                "ec2:AssociateRouteTable",
-                "ec2:AssociateSubnetCidrBlock",
-                "ec2:AssociateTransitGatewayRouteTable",
-                "ec2:AssociateVpcCidrBlock",
-                "ec2:AttachInternetGateway",
-                "ec2:AttachNetworkInterface",
-                "ec2:AttachVolume",
-                "ec2:AttachVpnGateway",
-                "ec2:AuthorizeSecurityGroupEgress",
-                "ec2:AuthorizeSecurityGroupIngress",
-                "ec2:CreateClientVpnEndpoint",
-                "ec2:CreateClientVpnRoute",
-                "ec2:CreateCustomerGateway",
-                "ec2:CreateDhcpOptions",
-                "ec2:CreateFlowLogs",
-                "ec2:CreateInternetGateway",
-                "ec2:CreateLaunchTemplate",
-                "ec2:CreateNetworkAcl",
-                "ec2:CreateNetworkInterface",
-                "ec2:CreateNetworkInterfacePermission",
-                "ec2:CreateRoute",
-                "ec2:CreateRouteTable",
-                "ec2:CreateSecurityGroup",
-                "ec2:CreateSubnet",
-                "ec2:CreateSubnetCidrReservation",
-                "ec2:CreateTags",
-                "ec2:CreateTransitGateway",
-                "ec2:CreateTransitGatewayPeeringAttachment",
-                "ec2:CreateTransitGatewayPrefixListReference",
-                "ec2:CreateTransitGatewayRoute",
-                "ec2:CreateTransitGatewayRouteTable",
-                "ec2:CreateTransitGatewayVpcAttachment",
-                "ec2:CreateVpc",
-                "ec2:CreateVpcEndpoint",
-                "ec2:CreateVpcEndpointConnectionNotification",
-                "ec2:CreateVpcEndpointServiceConfiguration",
-                "ec2:CreateVpnConnection",
-                "ec2:CreateVpnConnectionRoute",
-                "ec2:CreateVpnGateway",
-                "ec2:DeleteCustomerGateway",
-                "ec2:DeleteFlowLogs",
-                "ec2:DeleteInternetGateway",
-                "ec2:DeleteNetworkInterface",
-                "ec2:DeleteNetworkInterfacePermission",
-                "ec2:DeleteRoute",
-                "ec2:DeleteRouteTable",
-                "ec2:DeleteSecurityGroup",
-                "ec2:DeleteSubnet",
-                "ec2:DeleteSubnetCidrReservation",
-                "ec2:DeleteTags",
-                "ec2:DeleteTransitGateway",
-                "ec2:DeleteTransitGatewayPeeringAttachment",
-                "ec2:DeleteTransitGatewayPrefixListReference",
-                "ec2:DeleteTransitGatewayRoute",
-                "ec2:DeleteTransitGatewayRouteTable",
-                "ec2:DeleteTransitGatewayVpcAttachment",
-                "ec2:DeleteVpc",
-                "ec2:DeleteVpcEndpoints",
-                "ec2:DeleteVpcEndpointServiceConfigurations",
-                "ec2:DeleteVpnConnection",
-                "ec2:DeleteVpnConnectionRoute",
-                "ec2:Describe*",
-                "ec2:DetachInternetGateway",
-                "ec2:DisassociateAddress",
-                "ec2:DisassociateRouteTable",
-                "ec2:GetLaunchTemplateData",
-                "ec2:GetTransitGatewayAttachmentPropagations",
-                "ec2:ModifyInstanceAttribute",
-                "ec2:ModifySecurityGroupRules",
-                "ec2:ModifyTransitGatewayVpcAttachment",
-                "ec2:ModifyVpcAttribute",
-                "ec2:ModifyVpcEndpoint",
-                "ec2:ReleaseAddress",
-                "ec2:ReplaceRoute",
-                "ec2:RevokeSecurityGroupEgress",
-                "ec2:RevokeSecurityGroupIngress",
-                "ec2:RunInstances",
-                "ec2:StartInstances",
-                "ec2:StopInstances",
-                "ec2:UpdateSecurityGroupRuleDescriptionsEgress",
-                "ec2:UpdateSecurityGroupRuleDescriptionsIngress",
-                "iam:AddRoleToInstanceProfile",
-                "iam:AttachRolePolicy",
-                "iam:CreateInstanceProfile",
-                "iam:CreatePolicy",
-                "iam:CreateRole",
-                "iam:DeleteInstanceProfile",
-                "iam:DeletePolicy",
-                "iam:DeleteRole",
-                "iam:DeleteRolePolicy",
-                "iam:DetachRolePolicy",
-                "iam:GetInstanceProfile",
-                "iam:GetPolicy",
-                "iam:GetRole",
-                "iam:GetRolePolicy",
-                "iam:ListPolicyVersions",
-                "iam:ListRoles",
-                "iam:PassRole",
-                "iam:PutRolePolicy",
-                "iam:RemoveRoleFromInstanceProfile",
-                "lambda:CreateFunction",
-                "lambda:DeleteFunction",
-                "lambda:DeleteLayerVersion",
-                "lambda:GetFunction",
-                "lambda:GetLayerVersion",
-                "lambda:InvokeFunction",
-                "lambda:PublishLayerVersion",
-                "logs:CreateLogGroup",
-                "logs:DeleteLogGroup",
-                "logs:DescribeLogGroups",
-                "logs:PutRetentionPolicy",
-                "route53:ChangeTagsForResource",
-                "route53:CreateHealthCheck",
-                "route53:CreateHostedZone",
-                "route53:CreateTrafficPolicy",
-                "route53:DeleteHostedZone",
-                "route53:DisassociateVPCFromHostedZone",
-                "route53:GetHostedZone",
-                "route53:ListHostedZones",
-                "route53domains:ListDomains",
-                "route53domains:ListOperations",
-                "route53domains:ListTagsForDomain",
-                "route53resolver:AssociateResolverEndpointIpAddress",
-                "route53resolver:AssociateResolverRule",
-                "route53resolver:CreateResolverEndpoint",
-                "route53resolver:CreateResolverRule",
-                "route53resolver:DeleteResolverEndpoint",
-                "route53resolver:DeleteResolverRule",
-                "route53resolver:DisassociateResolverEndpointIpAddress",
-                "route53resolver:DisassociateResolverRule",
-                "route53resolver:GetResolverEndpoint",
-                "route53resolver:GetResolverRule",
-                "route53resolver:ListResolverEndpointIpAddresses",
-                "route53resolver:ListResolverEndpoints",
-                "route53resolver:ListResolverRuleAssociations",
-                "route53resolver:ListResolverRules",
-                "route53resolver:ListTagsForResource",
-                "route53resolver:UpdateResolverEndpoint",
-                "route53resolver:UpdateResolverRule",
-                "s3:AbortMultipartUpload",
-                "s3:CreateBucket",
-                "s3:DeleteBucket",
-                "s3:DeleteObject",
-                "s3:GetAccountPublicAccessBlock",
-                "s3:GetBucketAcl",
-                "s3:GetBucketOwnershipControls",
-                "s3:GetBucketPolicy",
-                "s3:GetBucketPolicyStatus",
-                "s3:GetBucketPublicAccessBlock",
-                "s3:GetObject",
-                "s3:GetObjectVersion",
-                "s3:GetBucketVersioning",
-                "s3:ListAccessPoints",
-                "s3:ListAccessPointsForObjectLambda",
-                "s3:ListAllMyBuckets",
-                "s3:ListBucket",
-                "s3:ListBucketMultipartUploads",
-                "s3:ListBucketVersions",
-                "s3:ListJobs",
-                "s3:ListMultipartUploadParts",
-                "s3:ListMultiRegionAccessPoints",
-                "s3:ListStorageLensConfigurations",
-                "s3:PutAccountPublicAccessBlock",
-                "s3:PutBucketAcl",
-                "s3:PutBucketPolicy",
-                "s3:PutBucketPublicAccessBlock",
-                "s3:PutObject",
-                "secretsmanager:CreateSecret",
-                "secretsmanager:DeleteSecret",
-                "secretsmanager:DescribeSecret",
-                "secretsmanager:GetSecretValue",
-                "secretsmanager:ListSecrets",
-                "secretsmanager:ListSecretVersionIds",
-                "secretsmanager:PutResourcePolicy",
-                "secretsmanager:TagResource",
-                "secretsmanager:UpdateSecret",
-                "sns:ListTopics",
-                "ssm:DescribeInstanceProperties",
-                "ssm:DescribeSessions",
-                "ssm:GetConnectionStatus",
-                "ssm:GetParameters",
-                "ssm:ListAssociations",
-                "ssm:ResumeSession",
-                "ssm:StartSession",
-                "ssm:TerminateSession"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
+#### 1. Architecture Overview
+The Campus IT Support Ticket Portal is implemented using a serverless architecture on Amazon Web Services.
 
-```
+This architecture does not require the operation of a traditional backend server. Functions such as user authentication, API processing, ticket storage, attachment storage, email notifications, and real-time updates are implemented using managed AWS services.
 
-#### Provision resources using CloudFormation
+The frontend is deployed through AWS Amplify Hosting. Users register and sign in through Amazon Cognito Hosted UI. After successful authentication, Cognito issues JWT tokens to the frontend.
 
-In this lab, we will use **N.Virginia region (us-east-1)**.
+The frontend includes the JWT token in requests sent to Amazon API Gateway. API Gateway uses a JWT Authorizer to validate the user before forwarding the request to the appropriate AWS Lambda function.
 
-To prepare the workshop environment, deploy this **CloudFormation Template** (click link): [PrivateLinkWorkshop ](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.us-east-1.amazonaws.com/reinvent-endpoints-builders-session/Nested.yaml&stackName=PLCloudSetup). Accept all of the defaults when deploying the template. 
+Lambda processes the application logic, interacts with Amazon DynamoDB to store ticket data, and uses Amazon S3 to store attachments.
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack1.png)
+The system also uses DynamoDB Streams, a notification Lambda function, Amazon SES, and API Gateway WebSocket API to deliver email notifications and real-time updates.
 
-+ Tick 2 acknowledgement boxes
-+ Choose **Create stack**
+#### 2. Overall Architecture Diagram
 
-![create stack](/images/5-Workshop/5.2-Prerequisite/create-stack2.png)
+![](/images/5-Workshop/5.2-ArchitectureOverview/Architecture.jpg)
 
-The **ClouddFormation** deployment requires about 15 minutes to complete.
+### 3.Main Components
+#### 3.1 Users and Administrators
 
-![complete](/images/5-Workshop/5.2-Prerequisite/complete.png)
+The system supports two primary user groups:
 
-+ **2 VPCs** have been created
+User: a student or staff member who submits IT support requests and tracks their status.
 
-![vpcs](/images/5-Workshop/5.2-Prerequisite/vpcs.png)
+Admin: an IT support team member who receives, classifies, updates, and deletes tickets.
 
-+ **3 EC2s** have been created
+Both user groups access the system through a web browser over HTTPS.
 
-![EC2](/images/5-Workshop/5.2-Prerequisite/ec2.png)
+#### 3.2 AWS Amplify Hosting
+
+AWS Amplify Hosting is used to host and distribute the system frontend.
+
+Amplify is connected to GitHub and automatically performs the build and deployment process whenever source code is pushed to the repository.
+
+The frontend is developed using Hugo, HTML, CSS, and JavaScript.
+
+#### 3.3 Amazon Cognito
+
+Amazon Cognito provides:
+
+Account registration.
+
+User authentication.
+
+Sign-out.
+
+Session management.
+
+Authorization through Cognito Groups.
+
+JWT token issuance.
+
+The system uses two primary groups:
+
+- Users
+- Admins
+
+The JWT token contains user and group information and is sent by the frontend to API Gateway for authenticated requests.
+
+#### 3.4 Amazon API Gateway
+
+Amazon API Gateway provides two API types:
+
+HTTP API: supports ticket create, read, update, and delete operations.
+
+WebSocket API: maintains real-time connections between browsers and the backend.
+
+The HTTP API uses a JWT Authorizer to validate tokens issued by Amazon Cognito.
+
+After successful validation, API Gateway forwards the request to the appropriate Lambda function.
+
+#### 3.5 AWS Lambda
+
+The system uses multiple Lambda functions to separate responsibilities.
+
+CampusSupportTicketService
+
+This Lambda function handles:
+
+Ticket creation.
+
+Ticket listing.
+
+Individual ticket lookup.
+
+Status updates.
+
+Processing-note updates.
+
+Ticket deletion.
+
+User and Admin permission checks.
+
+Presigned URL generation for file upload and download.
+
+CampusSupportNotificationService
+
+This Lambda function is triggered by DynamoDB Streams to:
+
+Send confirmation emails when tickets are created.
+
+Send alerts for High and Critical tickets.
+
+Send emails when ticket status or processing notes change.
+
+Publish real-time events through the WebSocket API.
+
+CampusSupportWebSocketService
+
+This Lambda function handles:
+
+The $connect event.
+
+The $disconnect event.
+
+Cognito token validation during connection establishment.
+
+Storage and removal of connectionId values.
+
+3.6 Amazon DynamoDB
+
+The system uses two main DynamoDB tables.
+
+CampusSupportTickets
+
+This table stores:
+
+Ticket ID.
+
+Requester name.
+
+Email address.
+
+Issue category.
+
+Priority.
+
+Issue description.
+
+Status.
+
+Processing notes.
+
+Attachment information.
+
+Creation and update timestamps.
+
+CampusSupportConnections
+
+This table stores active WebSocket connections, including:
+
+connectionId
+
+User ID or email.
+
+Authorization group.
+
+Connection timestamp.
+
+3.7 Amazon S3
+
+Amazon S3 stores ticket attachments, including:
+
+PNG files.
+
+JPG files.
+
+WebP files.
+
+PDF documents.
+
+The bucket is private.
+
+Users do not access the bucket directly. Lambda generates S3 Presigned URLs that allow file upload or download for a limited period.
+
+#### 3.8 Amazon SES
+
+Amazon SES is used to send:
+
+Confirmation emails after ticket creation.
+
+Alert emails to the IT support team.
+
+Notifications when ticket status changes.
+
+Notifications when an administrator adds processing notes.
+
+SES currently operates in the Sandbox environment, so sender and recipient addresses must be verified.
+
+#### 3.9 Amazon CloudWatch
+
+Amazon CloudWatch stores logs and supports monitoring for:
+
+AWS Lambda.
+
+API Gateway.
+
+DynamoDB Streams.
+
+WebSocket API.
+
+CloudWatch helps inspect errors, execution duration, failed requests, and system events.
+
+#### 3.10 AWS IAM
+
+AWS IAM provides permissions to the Lambda functions.
+
+Each Lambda function receives only the permissions it requires, such as:
+
+Reading and writing DynamoDB data.
+
+Uploading and downloading files from S3.
+
+Sending emails through SES.
+
+Sending messages through the WebSocket Management API.
+
+Writing logs to CloudWatch.
+
+This permission model follows the principle of least privilege.
+
+### 4.User Authentication Flow
+
+The authentication process operates as follows:
+
+The user accesses the frontend hosted on AWS Amplify.
+
+The user selects the sign-in or registration function.
+
+The browser is redirected to Amazon Cognito Hosted UI.
+
+Cognito authenticates the account.
+
+After successful authentication, Cognito redirects the user back to the frontend.
+
+The frontend receives JWT tokens.
+
+The tokens are stored for the authenticated session.
+
+The frontend includes the token in requests sent to API Gateway.
+
+The JWT Authorizer validates the token.
+
+Valid requests are forwarded to Lambda.
+
+If a token is invalid or expired, API Gateway rejects the request before the Lambda function is invoked.
+
+### 5.Ticket Creation Flow
+
+The ticket creation process operates as follows:
+
+The user enters issue information through the frontend.
+
+When an attachment is selected, the frontend requests an upload URL from the backend.
+
+API Gateway validates the JWT token.
+
+CampusSupportTicketService generates an Amazon S3 presigned URL.
+
+The frontend uploads the file directly to S3 using the presigned URL.
+
+The frontend sends the ticket information and attachment metadata to the HTTP API.
+
+API Gateway forwards the request to CampusSupportTicketService.
+
+Lambda validates the data and user permissions.
+
+The ticket is stored in the CampusSupportTickets table.
+
+The API returns a ticket ID to the frontend.
+
+DynamoDB Streams publishes an INSERT event.
+
+CampusSupportNotificationService sends a confirmation email.
+
+The notification Lambda publishes an event through the WebSocket API.
+
+User and Admin interfaces update without requiring a page reload.
+
+### 6.Ticket Update Flow
+The ticket update process operates as follows:
+
+An administrator signs in using an account in the Admins group.
+
+The administrator selects a ticket.
+
+The administrator updates the ticket status or processing notes.
+
+The frontend sends a PATCH request to API Gateway.
+
+The JWT Authorizer validates the token.
+
+Lambda performs an additional Cognito Group check.
+
+If the authenticated account belongs to the Admins group, Lambda updates the ticket in DynamoDB.
+
+DynamoDB Streams publishes a MODIFY event.
+
+CampusSupportNotificationService compares the old and new ticket data.
+
+A notification email is sent to the ticket requester.
+
+A WebSocket event is sent to connected browsers.
+
+The interface updates in real time.
+
+### 7.Real-Time Notification Flow
+ 
+The browser establishes a connection to the WebSocket API at the production stage.
+
+The connection process is as follows:
+
+The frontend sends a Cognito token during the $connect process.
+
+CampusSupportWebSocketService validates the token.
+
+When the token is valid, the connectionId is stored in CampusSupportConnections.
+
+When a ticket is created or updated, the notification Lambda reads the active connection records.
+
+Lambda sends an event through the WebSocket Management API.
+
+The frontend receives the event and updates the interface.
+
+When the user closes the page or loses the connection, the $disconnect event is triggered.
+
+Invalid connection records are removed from DynamoDB.
+
+### 8.Security Architecture
+
+The system applies multiple security layers:
+
+HTTPS protects data transmitted between browsers and AWS services.
+
+Amazon Cognito authenticates users.
+
+The JWT Authorizer protects HTTP API routes.
+
+Cognito Groups distinguish User and Admin permissions.
+
+Lambda validates authorization before performing administrative operations.
+
+The S3 bucket remains private.
+
+Presigned URLs remain valid only for a limited period.
+
+IAM roles follow the principle of least privilege.
+
+CloudWatch logs support troubleshooting and incident investigation.
+
+### 9.Serverless Architecture Characteristics
+
+The serverless architecture provides several benefits:
+
+No backend servers need to be configured or maintained.
+
+AWS services can scale automatically according to request volume.
+
+Costs are based primarily on actual usage.
+
+Authentication, storage, email, and WebSocket services can be integrated easily.
+
+Operational workloads are reduced.
+
+The architecture is suitable for a campus IT support system.
+
+The system can be expanded in the future.
+
+The next section presents the prerequisites required before deploying the system.

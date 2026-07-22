@@ -5,55 +5,27 @@ weight: 2
 chapter: false
 pre: " <b> 1.10. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 10 (22/06/2026 – 28/06/2026)
+- Thực hành các dịch vụ bảo mật AWS: Security Hub, GuardDuty, Macie và AWS Network Firewall.
+- Tiếp tục phát triển dự án Campus IT Support Ticket Portal.
+- Xây dựng và kiểm thử các chức năng trên môi trường AWS.
+- Hoàn thiện website và triển khai lên AWS Amplify.
+- Chuẩn bị nội dung và demo cho buổi workshop.
+- Ghi nhận các vấn đề phát sinh và đề xuất hướng xử lý.
 
-### Mục tiêu tuần 10:
+### Các hoạt động đã thực hiện
+Trong tuần thứ mười, em tập trung vào việc thực hành các dịch vụ bảo mật nâng cao trên AWS nhằm bảo vệ hệ thống một cách toàn diện. Cụ thể, em đã tìm hiểu và cấu hình Amazon Security Hub, Amazon GuardDuty, Amazon Macie, cũng như AWS Network Firewall. Song song với đó, em tiếp tục phát triển dự án Campus IT Support Ticket Portal, tiến hành xây dựng và kiểm thử các chức năng trực tiếp trên môi trường AWS.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Em cũng hoàn thiện phần giao diện/website của dự án và thực hiện triển khai thành công lên nền tảng AWS Amplify. Ngoài ra, em chủ động chuẩn bị nội dung chi tiết và lên kịch bản demo cho buổi workshop chung. Trong suốt quá trình thực hiện, em luôn chú trọng việc ghi nhận các vấn đề phát sinh, từ đó phân tích nguyên nhân và đề xuất các hướng xử lý kịp thời, hiệu quả.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
+- Nắm vững cách vận hành và cấu hình các dịch vụ bảo mật chuyên sâu gồm Security Hub, GuardDuty, Macie và AWS Network Firewall.
+- Đẩy mạnh tiến độ phát triển các chức năng của dự án Campus IT Support Ticket Portal trên môi trường cloud.
+- Hoàn tất việc xây dựng, kiểm thử và triển khai website thành công lên AWS Amplify.
+- Chuẩn bị chu đáo nội dung tài liệu và bản demo hoàn chỉnh cho buổi workshop.
+- Xây dựng kỹ năng xử lý sự cố thông qua việc ghi nhận và đưa ra hướng giải quyết cho các vấn đề phát sinh.
 
-
-### Kết quả đạt được tuần 10:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+### Nhận xét
+Tuần 10 đánh dấu một bước tiến quan trọng khi các mảnh ghép của dự án dần hoàn thiện và được đưa lên môi trường thực tế thông qua AWS Amplify. Việc kết hợp giữa việc triển khai ứng dụng, thực hành các dịch vụ bảo mật cao cấp (Security Hub, GuardDuty...) và chuẩn bị workshop giúp em nâng cao toàn diện cả kỹ năng kỹ thuật (technical skills) lẫn kỹ năng trình bày, xử lý vấn đề.
 

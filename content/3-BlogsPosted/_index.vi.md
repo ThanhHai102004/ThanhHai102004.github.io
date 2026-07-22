@@ -6,17 +6,16 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-{{% notice warning %}}  
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
+Phần này gồm 3 bài blog chia sẻ quá trình học AWS thông qua các tác vụ thực hành. Nội dung tập trung vào những gì tôi học được khi từng bước sử dụng AWS: từ tạo tài khoản, kiểm soát chi phí, IAM, các dịch vụ core, serverless API, monitoring và security.
 
-Tại đây sẽ là phần liệt kê, giới thiệu các blogs mà các bạn đã đăng trên [AWS Study Group](https://www.facebook.com/groups/awsstudygroupfcj). Ví dụ:
+Link các bài blog đã đăng: [AWS Study Group VN](https://www.facebook.com/groups/awsstudygroupfcj)
 
-###  [Blog 1 - SESSION POLICIES TRONG AMAZON EKS POD IDENTITY](3.1-Blog1/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+###  [Blog 1 - Học AWS từ tạo tài khoản, IAM và kiểm soát chi phí](3.1-Blog1/)
+Bài viết chia sẻ cách tôi bắt đầu học AWS thông qua việc chuẩn bị tài khoản, làm quen AWS Console, kiểm tra Billing và tìm hiểu IAM permissions.
 
-###  [Blog 3 - ...](3.3-Blog3/)
-Blog này giới thiệu Amazon EKS Pod Identity vừa bổ sung tính năng session policies, cho phép bạn thu hẹp quyền IAM một cách linh hoạt và chính xác cho từng pod mà không cần tạo thêm nhiều IAM roles riêng biệt. Đây là bước tiến quan trọng giúp áp dụng nguyên tắc least privilege hiệu quả hơn trong môi trường Kubernetes quy mô lớn.
+###  [Blog 2 - Thực hành các dịch vụ AWS core: EC2, S3, VPC và Database](3.2-Blog2/)
+Bài viết tập trung vào các tác vụ thực hành với EC2, S3, VPC, Security Group và database để hiểu rõ hơn về cloud infrastructure.
+
+###  [Blog 3 - Học Serverless, Authentication, Monitoring và Security trên AWS](3.3-Blog3/)
+Bài viết trình bày các tác vụ học tập liên quan đến Lambda, API Gateway, Cognito, DynamoDB, S3 attachment, CloudWatch, IAM và cleanup.

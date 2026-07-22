@@ -1,44 +1,55 @@
 ---
-title: "Chia sẻ, đóng góp ý kiến"
+title: "Sharing and Feedback"
 date: 2024-01-01
 weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau:
+# CHIA SẺ VÀ GÓP Ý
 
-### Đánh giá chung
+## Kinh nghiệm học tập và triển khai
+Trong suốt kỳ thực tập, tôi bắt đầu bằng việc học các kiến thức nền tảng và dịch vụ cốt lõi của AWS, sau đó dần chuyển sang các chủ đề nâng cao hơn như serverless, bảo mật, cơ sở dữ liệu, điện toán phi máy chủ, CI/CD, giám sát và kiểm soát chi phí. Việc viết worklog hàng tuần giúp tôi ôn lại những gì đã học, nhận diện khó khăn và hoàn thiện các phần còn thiếu trước khi chốt báo cáo.
 
-**1. Môi trường làm việc**  
-Môi trường làm việc rất thân thiện và cởi mở. Các thành viên trong FCAJ luôn sẵn sàng hỗ trợ khi mình gặp khó khăn, kể cả ngoài giờ làm việc. Không gian làm việc gọn gàng, thoải mái, giúp mình tập trung tốt hơn. Tuy nhiên, mình nghĩ có thể bổ sung thêm một số buổi giao lưu hoặc team bonding để mọi người hiểu nhau hơn.
+Dự án chính của tôi là **Campus IT Support Ticket Portal**, một hệ thống dựa trên web dùng để gửi và quản lý các yêu cầu hỗ trợ IT trong môi trường trường học. Hệ thống bao gồm hai nhóm người dùng chính: người dùng có thể gửi ticket, theo dõi trạng thái và tải lên file đính kèm; quản trị viên có thể xem danh sách ticket, lọc yêu cầu, cập nhật trạng thái, thêm ghi chú xử lý và xóa ticket khi cần.
 
-**2. Sự hỗ trợ của mentor / team admin**  
-Mentor hướng dẫn rất chi tiết, giải thích rõ ràng khi mình chưa hiểu và luôn khuyến khích mình đặt câu hỏi. Team admin hỗ trợ các thủ tục, tài liệu và tạo điều kiện để mình làm việc thuận lợi. Mình đánh giá cao việc mentor cho phép mình thử và tự xử lý vấn đề thay vì chỉ đưa đáp án.
+Điểm quan trọng nhất của dự án này là nó được xây dựng với kiến trúc serverless trên AWS. Frontend được triển khai bằng **AWS Amplify Hosting**, xác thực được xử lý bởi **Amazon Cognito**, API được quản lý bởi **Amazon API Gateway**, logic backend chạy trên **AWS Lambda**, dữ liệu được lưu trong **Amazon DynamoDB**, file đính kèm được lưu trong **Amazon S3**, thông báo sử dụng **Amazon SES**, log được giám sát thông qua **Amazon CloudWatch**, và toàn bộ quyền hạn được kiểm soát bởi **AWS IAM**.
 
-**3. Sự phù hợp giữa công việc và chuyên ngành học**  
-Công việc mình được giao phù hợp với kiến thức mình đã học ở trường, đồng thời mở rộng thêm những mảng mới mà mình chưa từng được tiếp cận. Nhờ vậy, mình vừa củng cố kiến thức nền tảng, vừa học thêm kỹ năng thực tế.
+Thông qua dự án này, tôi hiểu rằng một ứng dụng đám mây hoàn chỉnh không chỉ là tạo ra các dịch vụ riêng lẻ. Phần quan trọng hơn là thiết kế luồng kết nối giữa các dịch vụ, áp dụng các quyền hạn phù hợp, kiểm tra kỹ lưỡng từng hàm và ghi chép lại quá trình triển khai đủ rõ ràng để người khác có thể hiểu được.
 
-**4. Cơ hội học hỏi & phát triển kỹ năng**  
-Trong quá trình thực tập, mình học được nhiều kỹ năng mới như sử dụng công cụ quản lý dự án, kỹ năng làm việc nhóm, và cả cách giao tiếp chuyên nghiệp trong môi trường công ty. Mentor cũng chia sẻ nhiều kinh nghiệm thực tế giúp mình định hướng tốt hơn cho sự nghiệp.
+## Kiến thức thu được
 
-**5. Văn hóa & tinh thần đồng đội**  
-Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
+- Tôi hiểu cách một frontend được host và tự động deploy thông qua **AWS Amplify Hosting**.
+- Tôi học được cách **Amazon Cognito** hỗ trợ đăng ký, đăng nhập, JWT token và phân quyền qua các nhóm `Users`/`Admins`.
+- Tôi hiểu vai trò của **API Gateway** trong việc nhận request, xác thực JWT token và chuyển tiếp request đến **AWS Lambda**.
+- Tôi đã thực hành triển khai các thao tác backend với **AWS Lambda**, bao gồm các hàm tạo, đọc, cập nhật và xóa.
+- Tôi học cách lưu trữ dữ liệu NoSQL trong **Amazon DynamoDB** và quản lý file đính kèm bằng **Amazon S3**.
+- Tôi đã quen thuộc với thông báo email sử dụng **Amazon SES** và luồng cập nhật thời gian thực bằng **Amazon DynamoDB Streams / WebSocket**.
+- Tôi học cách sử dụng **Amazon CloudWatch** để kiểm tra lỗi và giám sát hoạt động backend.
+- Tôi nhận thức rõ hơn về **nguyên tắc tối thiểu quyền (least privilege)** của AWS và giám sát chi phí thông qua **Billing Dashboard**.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
+## Khó khăn gặp phải
 
+Trong quá trình triển khai, tôi gặp một số khó khăn khi kết nối các dịch vụ lại với nhau. Ví dụ, luồng Cognito và JWT Authorizer ban đầu rất dễ bị cấu hình sai vì frontend, API Gateway và Lambda đều cần xử lý token và quyền người dùng chính xác. Việc tách quyền người dùng thông thường khỏi quyền quản trị cũng đòi hỏi phải kiểm tra cẩn thận để ngăn người dùng truy cập vào các tính năng quản trị.
 
-### Một số câu hỏi khác
-- Điều bạn **hài lòng nhất** trong thời gian thực tập?  
-- Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?  
-- Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
+Một thách thức khác là gỡ lỗi backend. Khi request từ frontend không hoạt động như mong đợi, tôi phải kiểm tra nhiều lớp như cấu hình API Gateway, log Lambda, dữ liệu DynamoDB, quyền IAM và cài đặt CORS. Khi đã quen thuộc hơn với CloudWatch Logs, tôi xác định sự cố nhanh hơn và kiểm tra hệ thống từng bước một.
 
+Việc viết tài liệu cũng tốn đáng kể thời gian vì các phần Working, Proposal, Blogs Posted, Workshop, Self-Assessment và Sharing and Feedback cần phải đồng bộ với nhau. Khi kiến trúc hoặc nội dung dự án thay đổi, các phần tài liệu liên quan cũng phải được cập nhật để tránh mâu thuẫn.
 
-### Đề xuất & mong muốn
-- Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  
-- Bạn có muốn tiếp tục chương trình này trong tương lai?
-- Góp ý khác (tự do chia sẻ):
+## Góp ý và Đề xuất
+
+Từ trải nghiệm của tôi, hình thức học dựa trên workshop rất phù hợp cho học sinh/sinh viên vì nó kết hợp giữa lý thuyết và thực hành thực tế. Tuy nhiên, để học hiệu quả hơn, người học nên ghi chú lại trong lúc triển khai, chụp ảnh màn hình sau các bước quan trọng và cập nhật sơ đồ kiến trúc làm tài liệu tham khảo nếu dự án thay đổi.
+
+Tôi cũng nhận ra việc dọn dẹp tài nguyên (cleanup) và giám sát qua Billing Dashboard cần được chuẩn bị kỹ lưỡng. Người học AWS mới có thể tập trung tạo tài nguyên và quên kiểm tra xem tài nguyên còn chạy hay không sau khi thực hành. Việc giám sát chi phí nên trở thành một thói quen ngay từ đầu.
+
+Nếu tiếp tục phát triển dự án này, tôi muốn thực hiện các nội dung sau:
+
+- Xây dựng dashboard thống kê ticket theo trạng thái, mức độ ưu tiên và danh mục.
+- Cải thiện giao diện quản trị để lọc và thao tác hàng loạt ticket mượt mà hơn.
+- Thêm log chi tiết cho các hành động quản trị.
+- Hoàn-thiện cấu hình custom domain và quy trình xác thực domain nếu cho phép.
+- Định nghĩa các chính sách IAM để quyền giữa các dịch vụ được kiểm soát chặt chẽ hơn.
+
+## Kết luận
+
+Nhìn chung, kỳ thực tập mang lại cho tôi cái nhìn thực tế hơn về cách xây dựng một ứng dụng serverless trên AWS. Tôi không chỉ học cách sử dụng các dịch vụ AWS riêng lẻ, mà còn hiểu về thiết kế luồng hệ thống, kiểm soát truy cập, giám sát lỗi, quản lý chi phí và tài liệu kỹ thuật. Trải nghiệm này mang lại cho tôi nền tảng vững chắc hơn để tiếp tục học điện toán đám mây và xây dựng các dự án AWS trong tương lai.

@@ -5,111 +5,145 @@ weight: 2
 chapter: false
 pre: " <b> 2. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy verbatim** for your report, including this warning.
-{{% /notice %}}
 
-In this section, you need to summarize the contents of the workshop that you **plan** to conduct.
+#  Campus IT Support Ticket Portal
+## Serverless Helpdesk System on AWS for School IT Support
 
-# IoT Weather Platform for Lab Research
-## A Unified AWS Serverless Solution for Real-Time Weather Monitoring
+### 1. Project Overview
+Campus IT Support Ticket Portal is a serverless helpdesk system designed for school environments. The system allows students and staff to submit IT support requests, track the history and processing status of tickets, and receive notifications when tickets are created or updated. Additionally, it provides an administrative interface for the IT team to receive, categorize, update, add processing notes, and delete tickets when necessary.
 
-### 1. Executive Summary
-The IoT Weather Platform is designed for the ITea Lab team in Ho Chi Minh City to enhance weather data collection and analysis. It supports up to 5 weather stations, with potential scalability to 10-15, utilizing Raspberry Pi edge devices with ESP32 sensors to transmit data via MQTT. The platform leverages AWS Serverless services to deliver real-time monitoring, predictive analytics, and cost efficiency, with access restricted to 5 lab members via Amazon Cognito.
+The frontend is publicly hosted using AWS Amplify Hosting and connected to GitHub to automatically build and deploy whenever source code changes occur. Users register and log in via the Amazon Cognito Hosted UI. The backend is built using Amazon API Gateway, AWS Lambda, Amazon DynamoDB, Amazon S3, Amazon SES, Amazon CloudWatch, and AWS IAM.
 
-### 2. Problem Statement
-### What’s the Problem?
-Current weather stations require manual data collection, becoming unmanageable with multiple units. There is no centralized system for real-time data or analytics, and third-party platforms are costly and overly complex.
+The project goes beyond standard CRUD ticket functionalities. The system also supports file attachments via S3 Presigned URLs, asynchronous email sending using Amazon SES, and real-time user interface updates through DynamoDB Streams combined with a WebSocket API.
 
-### The Solution
-The platform uses AWS IoT Core to ingest MQTT data, AWS Lambda and API Gateway for processing, Amazon S3 for storage (including a data lake), and AWS Glue Crawlers and ETL jobs to extract, transform, and load data from the S3 data lake to another S3 bucket for analysis. AWS Amplify with Next.js provides the web interface, and Amazon Cognito ensures secure access. Similar to Thingsboard and CoreIoT, users can register new devices and manage connections, though this platform operates on a smaller scale and is designed for private use. Key features include real-time dashboards, trend analysis, and low operational costs.
+### 2. Problem Statement & Solution
+*Problem Statement*
 
-### Benefits and Return on Investment
-The solution establishes a foundational resource for lab members to develop a larger IoT platform, serving as a study resource, and provides a data foundation for AI enthusiasts for model training or analysis. It reduces manual reporting for each station via a centralized platform, simplifying management and maintenance, and improves data reliability. Monthly costs are $0.66 USD per the AWS Pricing Calculator, with a 12-month total of $7.92 USD. All IoT equipment costs are covered by the existing weather station setup, eliminating additional development expenses. The break-even period of 6-12 months is achieved through significant time savings from reduced manual work.
+In school environments, IT support requests are often reported via messaging apps, phone calls, emails, or direct conversations. This approach has several limitations:
+
+- Requests can be forgotten, duplicated, or lack a clear processing history.
+- The IT department lacks a centralized queue to prioritize issue resolution.
+- Users find it difficult to track whether their tickets are in New, In Progress, Resolved, or Closed states.
+- Admins need a clear interface to view ticket details, update statuses, and log resolution notes.
+- Evidence files like error screenshots are often sent separately, complicating ticket management.
+
+*Solution*
+
+Campus IT Support Ticket Portal addresses these issues by providing a centralized helpdesk system with two main user roles:
+- Users: Log in, submit tickets, upload attachments, and track their tickets.
+- Admins: View all tickets, filter lists, view details, update statuses, add processing notes, and delete tickets.
+- The application leverages managed AWS services to handle hosting, authentication, APIs, backend logic, databases, file storage, authorization, and monitoring.
 
 ### 3. Solution Architecture
-The platform employs a serverless AWS architecture to manage data from 5 Raspberry Pi-based stations, scalable to 15. Data is ingested via AWS IoT Core, stored in an S3 data lake, and processed by AWS Glue Crawlers and ETL jobs to transform and load it into another S3 bucket for analysis. Lambda and API Gateway handle additional processing, while Amplify with Next.js hosts the dashboard, secured by Cognito. The architecture is detailed below:
+#### Overall Architecture Diagram
 
-![IoT Weather Station Architecture](/images/2-Proposal/edge_architecture.jpeg)
 
-![IoT Weather Platform Architecture](/images/2-Proposal/platform_architecture.jpeg)
+![Sơ đồ](/images/2-Proposal/sodoDA.jpg)
 
-### AWS Services Used
-- **AWS IoT Core**: Ingests MQTT data from 5 stations, scalable to 15.
-- **AWS Lambda**: Processes data and triggers Glue jobs (two functions).
-- **Amazon API Gateway**: Facilitates web app communication.
-- **Amazon S3**: Stores raw data in a data lake and processed outputs (two buckets).
-- **AWS Glue**: Crawlers catalog data, and ETL jobs transform and load it.
-- **AWS Amplify**: Hosts the Next.js web interface.
-- **Amazon Cognito**: Secures access for lab users.
 
-### Component Design
-- **Edge Devices**: Raspberry Pi collects and filters sensor data, sending it to IoT Core.
-- **Data Ingestion**: AWS IoT Core receives MQTT messages from the edge devices.
-- **Data Storage**: Raw data is stored in an S3 data lake; processed data is stored in another S3 bucket.
-- **Data Processing**: AWS Glue Crawlers catalog the data, and ETL jobs transform it for analysis.
-- **Web Interface**: AWS Amplify hosts a Next.js app for real-time dashboards and analytics.
-- **User Management**: Amazon Cognito manages user access, allowing up to 5 active accounts.
+#### Architecture Description
+Users and administrators access the frontend hosted on AWS Amplify Hosting. When authentication is required, the browser is redirected to the Amazon Cognito Hosted UI. Upon successful authentication, Cognito issues a JWT token to the frontend.
 
-### 4. Technical Implementation
-**Implementation Phases**
-This project has two parts—setting up weather edge stations and building the weather platform—each following 4 phases:
-- Build Theory and Draw Architecture: Research Raspberry Pi setup with ESP32 sensors and design the AWS serverless architecture (1 month pre-internship)
-- Calculate Price and Check Practicality: Use AWS Pricing Calculator to estimate costs and adjust if needed (Month 1).
-- Fix Architecture for Cost or Solution Fit: Tweak the design (e.g., optimize Lambda with Next.js) to stay cost-effective and usable (Month 2).
-- Develop, Test, and Deploy: Code the Raspberry Pi setup, AWS services with CDK/SDK, and Next.js app, then test and release to production (Months 2-3).
+The frontend sends the JWT token in requests to the Amazon API Gateway HTTP API. The API Gateway uses a JWT Authorizer to validate the token before forwarding requests to the CampusSupportTicketService Lambda. The Lambda processes ticket business logic, validates User/Admin permissions, stores data in the CampusSupportTickets DynamoDB table, and generates S3 Presigned URLs to upload or download attachments within a private bucket.
 
-**Technical Requirements**
-- Weather Edge Station: Sensors (temperature, humidity, rainfall, wind speed), a microcontroller (ESP32), and a Raspberry Pi as the edge device. Raspberry Pi runs Raspbian, handles Docker for filtering, and sends 1 MB/day per station via MQTT over Wi-Fi.
-- Weather Platform: Practical knowledge of AWS Amplify (hosting Next.js), Lambda (minimal use due to Next.js), AWS Glue (ETL), S3 (two buckets), IoT Core (gateway and rules), and Cognito (5 users). Use AWS CDK/SDK to code interactions (e.g., IoT Core rules to S3). Next.js reduces Lambda workload for the fullstack web app.
+When a ticket is created or updated, DynamoDB Streams trigger the CampusSupportNotificationService. This Lambda sends emails via Amazon SES and dispatches real-time events through the API Gateway WebSocket API. WebSocket connection information is managed by the CampusSupportWebSocketService and stored in the CampusSupportConnections DynamoDB table.
 
-### 5. Timeline & Milestones
-**Project Timeline**
-- Pre-Internship (Month 0): 1 month for planning and old station review.
-- Internship (Months 1-3): 3 months.
-    - Month 1: Study AWS and upgrade hardware.
-    - Month 2: Design and adjust architecture.
-    - Month 3: Implement, test, and launch.
-- Post-Launch: Up to 1 year for research.
+### 4. AWS Services Used
+- **AWS Amplify Hosting:** Hosts the frontend and handles automatic builds and deployments from GitHub.
+- **Amazon Cognito Hosted UI:** Manages registration, login, logout, and user sessions.
+- **Cognito Groups:** Authorizes accounts into User and Admin groups.
+- **API Gateway HTTP API:** Provides endpoints for ticket creation, reading, updating, and deletion operations.
+- **API Gateway JWT Authorizer:** Validates JWT tokens from Cognito before allowing API calls.
+- **API Gateway WebSocket API** Sends real-time updates to User/Admin browsers.
+- **AWS Lambda:** Handles ticket business logic, notifications, WebSockets, and permission checks.
+- **Amazon DynamoDB:** Stores ticket data and WebSocket connection information.
+- **DynamoDB Streams:** Detects ticket creation or update events to trigger notifications.
+- **Amazon S3:** Stores file attachments in a private bucket.
+- **S3 Presigned URL:** Allows temporary file uploading/downloading without making the bucket public.
+- **Amazon SES:** ends confirmation emails, high-priority ticket alerts, and status change updates.
+- **Amazon CloudWatch:** Stores Lambda/API logs and supports debugging and error tracking.
+- **AWS IAM:** Enforces least-privilege permissions between Lambda and other AWS services.
 
-### 6. Budget Estimation
-You can find the budget estimation on the [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=621f38b12a1ef026842ba2ddfe46ff936ed4ab01).  
-Or you can download the [Budget Estimation File](../attachments/budget_estimation.pdf).
+### 5. Core Features
+#### User-Facing Features
+- Register, log in, and log out using Amazon Cognito.
+- Submit support requests categorized by WiFi, accounts, software, or hardware.
+- Select priority levels and input issue descriptions.
+- Attach PDF, PNG, JPG, or WebP files.
+- Receive a ticket code upon submission.
+- Look up tickets using their code.
+- View history of submitted requests.
+- Receive confirmation emails and real-time status updates.
 
-### Infrastructure Costs
-- AWS Services:
-    - AWS Lambda: $0.00/month (1,000 requests, 512 MB storage).
-    - S3 Standard: $0.15/month (6 GB, 2,100 requests, 1 GB scanned).
-    - Data Transfer: $0.02/month (1 GB inbound, 1 GB outbound).
-    - AWS Amplify: $0.35/month (256 MB, 500 ms requests).
-    - Amazon API Gateway: $0.01/month (2,000 requests).
-    - AWS Glue ETL Jobs: $0.02/month (2 DPUs).
-    - AWS Glue Crawlers: $0.07/month (1 crawler).
-    - MQTT (IoT Core): $0.08/month (5 devices, 45,000 messages).
+#### Administrator-Facing Features
+- View a dashboard displaying total tickets, in-progress tickets, high-priority tickets, and resolved tickets.
+- Search and filter tickets by status, priority, or issue category.
+- View ticket details and file attachments.
+- Update statuses and add processing notes.
+- Delete tickets from the system within the demo scope.
+- Receive email alerts when High or Critical tickets are created.
+- Automatically update the ticket list upon changes without requiring page reloads.
 
-Total: $0.7/month, $8.40/12 months
+### 6. Implemented APIs
+![Api](/images/2-Proposal/Api.jpg)
 
-- Hardware: $265 one-time (Raspberry Pi 5 and sensors).
+### 7. Core Data Model
+#### Bảng CampusSupportTickets 
+![Campussupportticket](/images/2-Proposal/campusticket.jpg)
 
-### 7. Risk Assessment
-#### Risk Matrix
-- Network Outages: Medium impact, medium probability.
-- Sensor Failures: High impact, low probability.
-- Cost Overruns: Medium impact, low probability.
+### 8. Testing Plan
 
-#### Mitigation Strategies
-- Network: Local storage on Raspberry Pi with Docker.
-- Sensors: Regular checks and spares.
-- Cost: AWS budget alerts and optimization.
+| Test Case | Expected Result |
+| :--- | :--- |
+| User registers and logs in | Cognito authenticates successfully, and the account belongs to the Users group |
+| User submits a valid ticket | Ticket is saved to DynamoDB, and a ticket code is returned |
+| User uploads an attachment file | File is uploaded to S3 via a Presigned URL |
+| User looks up a ticket | System returns the correct ticket information |
+| Admin views the dashboard | Ticket lists and metrics display correctly |
+| Admin updates status | DynamoDB is updated, and a MODIFY event is triggered |
+| Admin deletes a ticket | Ticket is deleted from DynamoDB |
+| Ticket is created | SES sends a confirmation email to the verified address |
+| High/Critical ticket is created | SES sends an alert email to the IT team |
+| Ticket is modified | WebSocket sends an event so the interface updates without reloading |
+| Request lacks JWT | API Gateway rejects the request |
+| Regular user calls admin API | Lambda rejects the operation |
+| Backend encounters an error | CloudWatch Logs record the error for debugging |
 
-#### Contingency Plans
-- Revert to manual methods if AWS fails.
-- Use CloudFormation for cost-related rollbacks.
+### 9. Cost Estimation
 
-### 8. Expected Outcomes
-#### Technical Improvements: 
-Real-time data and analytics replace manual processes.  
-Scalable to 10-15 stations.
-#### Long-term Value
-1-year data foundation for AI research.  
-Reusable for future projects.
+| Service | Estimated Cost/Month | Notes |
+| :--- | :--- | :--- |
+| AWS Amplify Hosting | ~$0-2 | Low frontend traffic |
+| Amazon Cognito | ~$0 | Suitable for demo users within the free tier |
+| API Gateway HTTP/WebSocket API | ~$0-2 | Depends on request volume and realtime connections |
+| AWS Lambda | ~$0-1 | Runs based on requests/events |
+| Amazon DynamoDB | ~$0-2 | Small ticket data volume, uses on-demand capacity |
+| Amazon S3 | ~$0-1 | Small file attachment storage size |
+| Amazon SES | ~$0-1 | Low demo email volume |
+| Amazon CloudWatch | ~$0-1 | Basic logging for Lambda/API |
+| **Total** | **~$0-10/month** | Depends on traffic, file size, and email volume |
+
+### 10. Risks and Limitations
+
+| Risk/Limitation | Impact | Mitigation Strategy |
+| :--- | :--- | :--- |
+| SES is in Sandbox mode | Can only send emails to verified addresses | Request production access if deploying live |
+| Cognito group misconfiguration | Users/Admins might have incorrect permissions | Validate group claims inside Lambda |
+| Overly broad IAM roles | Increases security risks | Apply the principle of least privilege |
+| S3 bucket accidentally made public | Attachment files could be exposed | Keep buckets private and use Presigned URLs |
+| Misconfigured CORS | Frontend cannot invoke APIs | Configure CORS based on the Amplify domain |
+| WebSocket connection timeout | Interface stops receiving realtime updates | Remove broken connection IDs and reconnect when necessary |
+| Forgetting to clean up resources | Incurs unexpected costs | Monitor the Billing Dashboard and document cleanup steps |
+
+### 11. Expected Results
+The project aims to deliver a complete serverless helpdesk system tailored for a junior cloud portfolio project, achieving the following outcomes:
+- Public deployment of the frontend using AWS Amplify Hosting.
+- User and Admin authentication and authorization via Amazon Cognito.
+- API protection powered by a JWT Authorizer.
+- Lambda functions handling ticket business logic and access control.
+- DynamoDB storing ticket entries and WebSocket connections.
+- S3 managing private file attachments securely through Presigned URLs.
+- SES handling confirmation and notification emails.
+- WebSockets enabling real-time user interface updates.
+- CloudWatch providing error observation and debugging capabilities.
+- IAM enforcing the minimum necessary permissions for each Lambda function.

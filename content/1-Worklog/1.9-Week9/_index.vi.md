@@ -5,55 +5,28 @@ weight: 1
 chapter: false
 pre: " <b> 1.9. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 9 (15/06/2026 – 21/06/2026)
+- Quản lý quyền bằng IAM Permission Boundaries.
+- Giám sát lưu lượng mạng bằng VPC Flow Logs.
+- Tìm hiểu AWS Backup cho việc sao lưu dữ liệu.
+- Tham gia chương trình AWS First Cloud Security Journey.
+- Tiếp tục phát triển các thành phần của dự án nhóm.
+- Trao đổi và thống nhất phương án tích hợp các dịch vụ AWS.
 
-### Mục tiêu tuần 9:
+### Các hoạt động đã thực hiện
+Trong tuần thứ chín, em tập trung sâu hơn vào các giải pháp bảo mật, giám sát mạng và quản trị dữ liệu trên AWS. Cụ thể, em đã tìm hiểu cách quản lý phân quyền chặt chẽ hơn thông qua IAM Permission Boundaries và thiết lập giám sát lưu lượng mạng bằng VPC Flow Logs. Bên cạnh đó, em nghiên cứu AWS Backup nhằm xây dựng giải pháp sao lưu và bảo vệ dữ liệu an toàn cho hệ thống.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Em cũng tiếp tục tham gia chương trình AWS First Cloud Security Journey để nâng cao kiến thức về bảo mật trên cloud. Trong khuôn khổ dự án nhóm, em tiếp tục phát triển các thành phần cốt lõi và tích cực trao đổi với các thành viên trong nhóm để thảo luận, thống nhất phương án tích hợp các dịch vụ AWS vào hệ thống chung.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
+- Nắm vững cách sử dụng IAM Permission Boundaries để kiểm soát và giới hạn quyền hạn hiệu quả.
+- Hiểu rõ cách cấu hình và phân tích lưu lượng mạng nhờ VPC Flow Logs.
+- Ứng dụng thành công kiến thức về AWS Backup vào việc chiến lược sao lưu dữ liệu.
+- Hoàn thành nội dung học tập từ chương trình AWS First Cloud Security Journey.
+- Thúc đẩy tiến độ phát triển các thành phần dự án nhóm và thống nhất được phương án tích hợp các dịch vụ AWS.
 
-
-### Kết quả đạt được tuần 9:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+### Nhận xét
+Tuần 9 mang lại cho em nhiều kiến thức chuyên sâu về bảo mật và quản trị hạ tầng cloud. Việc kết hợp giữa lý thuyết bảo mật (IAM, VPC Flow Logs, Backup) và thực hành triển khai dự án nhóm giúp em củng cố tư duy thiết kế hệ thống an toàn và chuẩn chỉnh hơn.
 
 

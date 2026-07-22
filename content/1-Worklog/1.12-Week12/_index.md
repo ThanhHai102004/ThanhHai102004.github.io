@@ -5,53 +5,27 @@ weight: 2
 chapter: false
 pre: " <b> 1.12. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 12 Objectives (06/07/2026 – 12/07/2026)
+- Integrate Amazon Cognito for user authentication and authorization.
+- Finalize file storage functionality using Amazon S3.
+- Configure IAM Roles and IAM Policies for AWS services.
+- Test the entire ticket submission and processing workflow.
+- Optimize performance and resolve remaining issues.
+- Update technical documentation and project progress reports.
 
-### Week 12 Objectives:
+### Activities Performed
+During the twelfth week, em focused on finalizing security, storage, and comprehensive protection features for the Campus IT Support Ticket Portal project. Specifically, em integrated Amazon Cognito to ensure secure user authentication and authorization. At the same time, em completed the file attachment storage feature using Amazon S3 and established strict IAM Roles and IAM Policies following the principle of least privilege for AWS services.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+Em also performed end-to-end testing on the entire ticket submission and processing workflow, optimized system performance, and thoroughly resolved any remaining bugs. By the end of the week, em updated all technical documentation and finalized the project progress report.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Results Achieved
+- Successfully integrated Amazon Cognito, enabling secure and accurate user authentication and management.
+- Completed the file storage module on Amazon S3 to support ticket attachments.
+- Successfully established security policies and roles via IAM Roles and IAM Policies.
+- Successfully tested the end-to-end ticket submission and processing workflow, ensuring smooth operation.
+- Enhanced overall application performance and eliminated existing bugs.
+- Finalized all technical documentation and project progress reports on schedule.
 
-
-### Week 12 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Remarks
+Week 12 marks a major milestone in completing the project—from security authentication (Cognito, IAM) and storage (S3) to end-to-end business workflow testing and optimization. This process has provided me with valuable hands-on experience in building a robust, secure, and deployment-ready Cloud system.

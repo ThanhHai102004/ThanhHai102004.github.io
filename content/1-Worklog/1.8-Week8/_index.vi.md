@@ -5,55 +5,28 @@ weight: 1
 chapter: false
 pre: " <b> 1.8. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
 
+### Mục tiêu tuần 8 (08/06/2026 – 14/06/2026)
+- Giám sát hệ thống bằng Amazon CloudWatch.
+- Tìm hiểu AWS Systems Manager.
+- Nghiên cứu Amazon Cognito phục vụ xác thực người dùng.
+- Tìm hiểu kiến trúc của dự án Campus IT Support Ticket Portal.
+- Tham gia trao đổi với nhóm về phương án triển khai hệ thống.
+- Tham gia Event: Lắng nghe về dự án và cách vận hành của 1 trang link rút gọn, cách hòa nhập văn hóa công sở, và tìm hiểu sâu hơn về DevOps.
+- Chuẩn bị các tài nguyên AWS cho dự án.
 
-### Mục tiêu tuần 8:
+### Các hoạt động đã thực hiện
+Trong tuần thứ tám, em tập trung tìm hiểu và ứng dụng các dịch vụ quản lý, giám sát và bảo mật của AWS. Cụ thể, em đã tìm hiểu cách giám sát hoạt động hệ thống bằng Amazon CloudWatch, cũng như nghiên cứu AWS Systems Manager để quản lý cấu hình và vận hành tài nguyên hiệu quả hơn. Bên cạnh đó, em dành thời gian nghiên cứu Amazon Cognito nhằm phục vụ cho việc xác thực và quản lý người dùng một cách an toàn.
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+Em cũng tìm hiểu sâu hơn về kiến trúc của dự án Campus IT Support Ticket Portal và tham gia trao đổi trực tiếp với nhóm để thống nhất phương án triển khai hệ thống tối ưu nhất. Ngoài ra, em đã chuẩn bị các tài nguyên AWS cần thiết cho dự án. Trong tuần này, em cũng tham gia các buổi event hữu ích: lắng nghe chia sẻ về dự án và cách vận hành của một trang link rút gọn, học hỏi kinh nghiệm hòa nhập văn hóa công sở, và cập nhật thêm nhiều kiến thức chiều sâu về DevOps.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Kết quả đạt được
+- Nắm vững cách sử dụng Amazon CloudWatch để giám sát hệ thống.
+- Hiểu rõ nguyên lý hoạt động của AWS Systems Manager và Amazon Cognito.
+- Nắm bắt kiến trúc dự án Campus IT Support Ticket Portal và thống nhất phương án triển khai cùng nhóm.
+- Hoàn tất công tác chuẩn bị các tài nguyên AWS cần thiết cho dự án.
+- Thu thập thêm nhiều kinh nghiệm thực tế từ việc tham gia các event về DevOps, văn hóa công sở và vận hành hệ thống.
 
-
-### Kết quả đạt được tuần 8:
-
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
+### Nhận xét
+Tuần 8 mang lại cho em cái nhìn toàn diện hơn về mảng vận hành, bảo mật và giám sát hệ thống trên Cloud. Việc tiếp cận sớm với Cognito, CloudWatch, Systems Manager cùng các buổi chia sẻ thực tế giúp em củng cố vững chắc kiến thức DevOps và sẵn sàng cho các bước triển khai tiếp theo của dự án.
 

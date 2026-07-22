@@ -5,53 +5,26 @@ weight: 1
 chapter: false
 pre: " <b> 1.1. </b> "
 ---
-{{% notice warning %}} 
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
 
+### Week 1 Objectives (17/04/2026 – 26/04/2026)
+- Get familiar with the internship environment and the members of the First Cloud AI Journey program.
+- Understand the basic concept of AWS and how to use the AWS Console and AWS CLI.
+- Become familiar with core services such as EC2, EBS, and related cloud concepts.
 
-### Week 1 Objectives:
+### Activities Completed
+During the first week, I focused on getting acquainted with the internship environment and the AWS cloud platform. I was introduced to the First Cloud AI Journey program, reviewed the internship regulations, and began learning about the main AWS service groups, including Compute, Storage, Networking, and Database. This helped me build a foundational understanding of cloud computing and the role of AWS in modern IT infrastructure.
 
-* Connect and get acquainted with members of First Cloud AI Journey.
-* Understand basic AWS services, how to use the console & CLI.
+I created an AWS Free Tier account and started exploring the AWS Management Console. After that, I installed AWS CLI and configured the basic access information such as Access Key, Secret Key, and the default region so that I could manage AWS resources from the terminal as well as from the web console.
 
-### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCAJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+In the following days, I studied the basics of EC2, including instance types, AMIs, EBS volumes, and methods to connect to an EC2 instance using SSH. I also practiced launching an EC2 instance, connecting to it remotely, and attaching an EBS volume, which gave me a better understanding of how virtual servers are managed on AWS.
 
+### Results Achieved
+- Gained a clear overview of AWS and its core service categories.
+- Successfully created and configured an AWS Free Tier account.
+- Became familiar with the AWS Management Console and AWS CLI.
+- Learned the basic workflow of launching and managing an EC2 instance.
+- Understood how to connect to an EC2 instance through SSH and how EBS storage works.
+- Built a solid foundation for continuing with more advanced AWS topics in the following weeks.
 
-### Week 1 Achievements:
-
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Successfully created and configured an AWS Free Tier account.
-
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
-
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
-
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+### Reflection
+The first week was mainly about orientation and building a foundation. I found that understanding both the web console and the CLI is very important, because they are two main ways to manage AWS resources efficiently. This initial experience helped me become more confident in exploring the platform and preparing for more practical tasks in the upcoming weeks.

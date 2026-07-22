@@ -1,18 +1,25 @@
 ---
-title : "Access S3 from VPC"
+title : "Prerequisites"
 date : 2024-01-01
 weight : 3
 chapter : false
 pre : " <b> 5.3. </b> "
 ---
 
-#### Using Gateway endpoint
+Before deploying the system, I prepared the frontend source code, AWS account, GitHub repository, and required permissions for creating AWS resources.
 
-In this section, you will create **a Gateway eendpoint** to access **Amazon S3** from **an EC2 instance**. **The Gateway endpoint** will allow upload an object to S3 buckets without using **the Public Internet**. To create an endpoint, you must specify the VPC in which you want to create the endpoint, and the service (in this case, S3) to which you want to establish the connection.
+### Required components
 
-![overview](/images/5-Workshop/5.3-S3-vpc/diagram2.png)
+Source code of Campus IT Support Ticket Portal.
 
-#### Content
+GitHub repository connected to AWS Amplify Hosting.
 
-- [Create gateway endpoint](3.1-create-gwe/)
-- [Test gateway endpoint](3.2-test-gwe/)
+AWS account for creating Amplify, Cognito, API Gateway, Lambda, DynamoDB, S3, SES, CloudWatch, and IAM resources.
+
+A consistent AWS Region for backend services.
+
+Email address for testing Amazon SES notifications.
+
+### Result
+
+After this preparation step, the project was ready for frontend deployment and serverless backend configuration.
