@@ -1,5 +1,5 @@
 ---
-title: "Bảo mật và Quyền IAM"
+title: "Bảo mật Quyền IAM"
 date: 2024-01-01
 weight: 9
 chapter: false
