@@ -3,7 +3,7 @@ title : "Cấu hình nhóm Users và Admins"
 date : 2024-01-01
 weight : 5
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5.2 </b> "
 ---
 
 Tôi đã cấu hình các nhóm Cognito để phân biệt người dùng thông thường và quản trị viên.

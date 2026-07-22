@@ -1,9 +1,9 @@
 ---
-title : "2Configure User and Admin Groups"
+title : "Configure User and Admin Groups"
 date : 2024-01-01
-weight : 5
+weight : 2
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5.2 </b> "
 ---
 The system uses Cognito Groups to separate normal users and administrators.
 

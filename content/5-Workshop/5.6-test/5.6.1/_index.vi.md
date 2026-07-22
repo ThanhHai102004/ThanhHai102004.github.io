@@ -1,9 +1,9 @@
 ---
 title: "Tạo HTTP API Routes"
 date: 2024-01-01
-weight: 6
+weight: 5
 chapter: false
-pre: " <b> 5.6. </b> "
+pre: " <b> 5.6.1 </b> "
 ---
 
 Tôi tạo các route API phục vụ chức năng quản lý ticket.

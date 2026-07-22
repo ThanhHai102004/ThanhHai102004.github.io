@@ -1,12 +1,10 @@
 ---
 title: "Các sự kiện đã tham gia"
 date: 2024-01-01
-weight: 1
+weight: 4
 chapter: false
 pre: " <b> 4. </b> "
 ---
-
-# CÁC SỰ KIỆN ĐÃ THAM GIA
 
 Trong quá trình thực tập và học tập tại FCJ, tôi đã tham gia một buổi chia sẻ tập trung vào phương pháp học tập, định hướng nghề nghiệp, Prompt Engineering, môi trường làm việc trong ngân hàng và kinh nghiệm tuyển dụng. Buổi sự kiện giúp tôi có thêm góc nhìn thực tế về cách học hiệu quả, cách sử dụng AI trong học tập và công việc, cũng như cách chuẩn bị bản thân cho quá trình ứng tuyển sau thực tập.
 

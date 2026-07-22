@@ -1,9 +1,9 @@
 ---
-title : "3Test Sign-in and JWT Token"
+title : "Test Sign-in and JWT Token"
 date : 2024-01-01
-weight : 5
+weight : 3
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5.3 </b> "
 ---
 After configuring Cognito, I tested the sign-in flow through Hosted UI and confirmed that the frontend could receive a JWT token.
 

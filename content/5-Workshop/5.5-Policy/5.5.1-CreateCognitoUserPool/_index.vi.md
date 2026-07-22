@@ -3,7 +3,7 @@ title : "Tạo Cognito User Pool"
 date : 2024-01-01
 weight : 5
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5.1 </b> "
 ---
 
 Tôi đã tạo một Cognito User Pool để lưu trữ tài khoản người dùng và quản lý xác thực cho hệ thống.

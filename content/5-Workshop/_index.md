@@ -47,7 +47,7 @@ Lambda handles ticket operations, authorization checks, attachment processing, a
 3. [Prerequisites](5.3-S3-vpc/)
 4. [Deploy Frontend with AWS Amplify](5.4-S3-onprem/)
 5. [Configure Authentication with Amazon Cognito](5.5-Policy/)
-6. [Build Backend API with API Gateway and Lambda](5.6-Cleanup/)
+6. [Build Backend API with API Gateway and Lambda](http://localhost:1313/5-workshop/5.6-test/)
 7. [Store Ticket Data with DynamoDB]()
 8. [Store Attachments with Amazon S3]()
 9. [Configure Notification and Monitoring]()

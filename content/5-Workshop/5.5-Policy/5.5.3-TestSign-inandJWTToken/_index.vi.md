@@ -3,7 +3,7 @@ title : "Kiểm tra đăng nhập và JWT token"
 date : 2024-01-01
 weight : 5
 chapter : false
-pre : " <b> 5.5. </b> "
+pre : " <b> 5.5.3 </b> "
 ---
 
 Tôi đã kiểm tra quá trình đăng nhập và việc sử dụng JWT token trong frontend.
