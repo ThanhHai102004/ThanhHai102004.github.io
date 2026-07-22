@@ -1,44 +1,28 @@
 ---
-title: "Events Participated"
+title: "Event 1"
 date: 2024-01-01
-weight: 4
+weight: 1
 chapter: false
-pre: " <b> 4. </b> "
+pre: " <b> 4.1. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The information below is for reference purposes only. Please **do not copy it verbatim** for your report, including this warning.
-{{% /notice %}}
+# EVENTS PARTICIPATED
 
-> In this section, you should list and describe in detail the events you have participated in during your internship or work experience.  
-> 
-> Each event should be presented in the format Event 1, Event 2, Event 3…, along with the following details:
-> * Event name
-> * Date and time
-> * Location (if applicable)
-> * Your role in the event (attendee, event support, speaker, etc.)
-> * A brief description of the event’s content and main activities
-> * Outcomes or value gained (lessons learned, new skills, contribution to the team/project)
-> * This listing helps demonstrate your actual participation as well as the soft skills and experience you have gained from each event.
+During the internship and learning process at FCJ, I participated in a sharing session focusing on learning methods, career orientation, Prompt Engineering, working environments in banking, and recruitment experiences. The session helped me gain practical insights into effective learning methods, how to use AI in studying and working, and how to prepare myself for the internship recruitment process.
 
-During my internship, I participated in two events. Each one was a memorable experience that provided new, interesting, and useful knowledge, along with gifts and wonderful moments.
+## 1. Event 1 - Learning Methods, Prompt Engineering, and Career Orientation
 
-### [Event 1](4.1-Event1/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
-
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
-&emsp;**Role:** Attendee  
-
----
-
-### [Event 2](4.2-Event2/)  
-&emsp;**Event Name:** GenAI-powered App-DB Modernization workshop  
-
-&emsp;**Date & Time:** 09:00, August 13, 2025  
-
-&emsp;**Location:** 26th Floor, Bitexco Tower, 02 Hai Trieu Street, Saigon Ward, Ho Chi Minh City  
-
-&emsp;**Role:** Attendee  
+- **Time:** 9:00 AM - 12:00 PM
+- **Role:** Participant
+- **Main topics & Summary:** The session consisted of four main sharing parts. Mr. Hoang Long presented effective learning methods and how to maintain learning motivation. Mr. Thinh Nguyen presented **Prompt Engineering**, effective communication with AI, prompt token optimization, advanced prompt techniques, and a demo of the **Proptimizer** project. The **VIB** team shared about working and developing in a banking environment, especially requirements for accuracy, security, processes, and responsibility. The final part was sharing from the recruitment expert/HR about evaluation criteria for candidates, CV preparation, interviews, and career orientation.
+- **Timeline details:**
+  - `9:00 - 9:45`: Mr. Hoang Long shared about learning methods, avoiding distraction, and maintaining motivation.
+  - `9:45 - 10:30`: Mr. Thinh Nguyen presented Automated Prompt Engineering: Enhancing LLM Output Quality and demo of the Proptimizer project.
+  - `10:30 - 11:15`: VIB team shared about studying, working, and developing in a banking environment.
+  - `11:15 - 12:00`: Recruitment expert/HR shared recruitment experiences, key factors HR looks for when evaluating candidates.
+- **Lessons learned:**
+  - Understood the importance of having clear goals, planning, and practical action.
+  - Learned how to use Prompt Engineering to ask clearer questions when working with AI.
+  - Learned how an AI application can be built on AWS through services such as Amazon S3, Amazon CloudFront, Amazon Cognito, Amazon API Gateway, AWS Lambda, Amazon Bedrock, Amazon DynamoDB, and Amazon CloudWatch.
+  - Gained more insights into the working environment in banking, especially requirements regarding security, processes, and responsibilities.
+  - Learned how to better prepare for the recruitment process through CV, communication skills, project experience, and learning attitude.
