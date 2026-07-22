@@ -1,9 +1,9 @@
 ---
-title: "Event 1"
+title: "Events Participated"
 date: 2024-01-01
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 4. </b> "
 ---
 
 # EVENTS PARTICIPATED

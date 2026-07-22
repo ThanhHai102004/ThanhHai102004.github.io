@@ -6,8 +6,6 @@ chapter: false
 pre: " <b> 5.6. </b> "
 ---
 
-# BUILD BACKEND API WITH API GATEWAY AND LAMBDA
-
 The backend uses **Amazon API Gateway** to receive requests from the frontend and **AWS Lambda** to process ticket logic.
 
 ### Implementation content
