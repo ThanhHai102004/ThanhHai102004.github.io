@@ -1,8 +1,9 @@
-baseURL = "https://thanhhai102004.github.io/fcj-workshop-template-new/"
+baseURL = "https://thanhhai102004.github.io/"
 relativeURLs = false
 canonifyURLs = false
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
+
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
 
