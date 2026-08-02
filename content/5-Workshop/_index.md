@@ -42,13 +42,13 @@ Lambda handles ticket operations, authorization checks, attachment processing, a
 
 ### Implementation content
 
-1. [Project Overview](5.1-Workshop-overview)
-2. [Architecture Overview](5.2-Prerequiste/)
-3. [Prerequisites](5.3-S3-vpc/)
-4. [Deploy Frontend with AWS Amplify](5.4-S3-onprem/)
-5. [Configure Authentication with Amazon Cognito](5.5-Policy/)
-6. [Build Backend API with API Gateway and Lambda](http://localhost:1313/5-workshop/5.6-test/)
-7. [Store Ticket Data with DynamoDB](http://localhost:1313/5-workshop/5.7/)
-8. [Store Attachments with Amazon S3](http://localhost:1313/5-workshop/5.8/)
-9. [Configure Notification and Monitoring](http://localhost:1313/5-workshop/5.9/)
-10. [Security and IAM Permissions](http://localhost:1313/5-workshop/5.10/)
+1. [Project Overview](https://thanhhai102004.github.io/en/5-workshop/5.1-workshop-overview/)
+2. [Architecture Overview](https://thanhhai102004.github.io/en/5-workshop/5.2-prerequiste/)
+3. [Prerequisites](https://thanhhai102004.github.io/en/5-workshop/5.3-s3-vpc/)
+4. [Deploy Frontend with AWS Amplify](https://thanhhai102004.github.io/en/5-workshop/5.4-s3-onprem/)
+5. [Configure Authentication with Amazon Cognito](https://thanhhai102004.github.io/en/5-workshop/5.5-policy/)
+6. [Build Backend API with API Gateway and Lambda](https://thanhhai102004.github.io/en/5-workshop/5.6-test/)
+7. [Store Ticket Data with DynamoDB](https://thanhhai102004.github.io/en/5-workshop/5.7/)
+8. [Store Attachments with Amazon S3](https://thanhhai102004.github.io/en/5-workshop/5.8/)
+9. [Configure Notification and Monitoring](https://thanhhai102004.github.io/en/5-workshop/5.9/)
+10. [Security and IAM Permissions](https://thanhhai102004.github.io/en/5-workshop/5.10/)
